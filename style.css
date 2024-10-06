@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  height: 100vh;
+  background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+}
+
+.player {
+  flex: 50%;
+  transition: all 0.4s;
+}
+
+.button {
+  height: 40px;
+  width: 150px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  background-color: bisque;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.7;
+  transition: all 0.2s;
+}
+
+main {
+  display: flex;
+  position: relative;
+  width: 900px;
+  height: 600px;
+}
+
+.name {
+  margin-top: 35px;
+  margin-bottom: 0;
+}
+
+.score {
+  margin-top: 20px;
+  font-size: 40px;
+  margin-bottom: 0;
+}
+
+.current {
+  margin-top: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #6e0825;
+  height: 100px;
+  width: 170px;
+  padding-top: 15px;
+  border-radius: 20px;
+}
+
+.player--0 {
+  background-color: rgb(221, 155, 155);
+}
+
+.player--1 {
+  background-color: #c7365f;
+}
+
+.player--active {
+  background-color: rgba(45, 225, 135, 0.4);
+}
+.player--active .name {
+  font-weight: bolder;
+  font-size: 40px;
+}
+.player--active .score {
+  font-weight: bolder;
+  font-size: 40px;
+}
+
+.current-label {
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.current-score {
+  margin-top: 5px;
+  font-size: 30px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dice {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  left: 50%;
+  top: 35%;
+  transform: translateX(-50%);
+  opacity: 0.8;
+}
+
+.button-new {
+  top: 20px;
+}
+
+.button-roll {
+  top: 420px;
+}
+
+.button-hold {
+  top: 500px;
+}
+
+.hidden {
+  display: none;
+}
+
+.player--winner {
+  background-color: #2f2f2f;
+}
+.player--winner .name {
+  color: brown;
+}
+
+.button:active {
+  background-color: black;
+  color: white;
+}
+.button:hover {
+  height: 50px;
+  width: 160px;
+}
